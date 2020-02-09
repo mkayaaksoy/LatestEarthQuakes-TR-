@@ -1,7 +1,12 @@
 $("#eqTableBody tr").remove();
 var tableBody = $("#eqTableBody");
 var row;
+
+$("#getButton").addClass("initial");
+$("#getButton").removeClass("after-load");
+
 $("#getButton").click(function () {
+    $("#getButton").hide()
     $("#eqTableBody tr").remove();
     $.get("https://api.orhanaydogdu.com.tr/deprem/live.php?limit=5", function (data, status) {
         var dataResult = data.result;
@@ -12,6 +17,9 @@ $("#getButton").click(function () {
             row.append($('<td>' + dataResult[i].lokasyon + "</td>"));
             row.append($('<td>' + dataResult[i].depth + "</td>"));
             row.append($('<td> <b>' + dataResult[i].mag + "</b></td>"));
+            $("#getButton").removeClass("initial");
+            $("#getButton").addClass("after-load");
+            $("#getButton").show()
         }
     });
 });

@@ -9,16 +9,18 @@
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Barlow' type="text/css">
     <link rel='stylesheet' href='assets/css/main.css' type="text/css">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css"  type="text/css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css"  type="text/css">
+
     <script src='assets/js/jquery-3.4.1.min.js'></script>
 </head>
-<body>
-    <table class="table table-dark">
-        <thead>
+<body >
+    <table class="table table-striped table-bordered">
+        <thead class="thead-dark">
             <tr>
-                <th scope="col">Tarih</th>
-                <th scope="col">Şehir</th>
-                <th scope="col">Derinlik</th>
-                <th scope="col">Şiddet</th>
+                <th scope="row">Tarih</th>
+                <th scope="row">Şehir</th>
+                <th scope="row">Derinlik</th>
+                <th scope="row">Şiddet</th>
 
             </tr>
         </thead>
@@ -26,7 +28,7 @@
         </tbody>
     </table>
     <br />
-    <button id="getButton">Son Depremler</button>
+    <button id="getButton" class="btn btn-outline-primary">Son Depremler</button>
     <!-- Optional JavaScript -->
     <script src="eq.js">
     </script>

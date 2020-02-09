@@ -4,10 +4,10 @@
     "description": "Extension displays last ten earthquakes for Turkey",
     "version": "1.0.0",
     "icons": {
-        "128": "assets/images/icon_128.png"
+        "128": "assets/_images/icon_128.png"
     },
     "browser_action": {
-        "default_icon": "assets/images/icon.png",
+        "default_icon": "assets/_images/icon.png",
         "default_popup": "eq.html"
     },
     "content_scripts": [

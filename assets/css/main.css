@@ -3,7 +3,7 @@ body {
     font-family: 'Barlow', 'barlow';
     font-size: 12px;
     margin: 0;
-    min-height: 180px;
+    min-height: 400px;
     padding: 0;
     width: 350px;
 }
@@ -21,4 +21,15 @@ th {
 
 td {
     width: 40%;
+}
+
+.initial {
+    margin-top:309px;
+    margin-left: 2px;
+    margin-bottom: 2px;
+}
+
+.after-load
+{
+    margin:2px;
 }

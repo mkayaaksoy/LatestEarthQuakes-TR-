@@ -3,5 +3,9 @@
 
 2- It's simple chrome extension for the track earthquakes when you want.
 
-![Image of Earthquakes](https://github.com/mkayaaksoy/LatestEarthQuakes-TR-/blob/master/images/eqextensiontr.png)
+V2
+![Image of Earthquakes V2](https://github.com/mkayaaksoy/LatestEarthQuakes-TR-/blob/master/assets/_images/earthquake_new_image.PNG)
+
+V1
+![Image of Earthquakes V1](https://github.com/mkayaaksoy/LatestEarthQuakes-TR-/blob/master/assets/_images/eqextensiontr.png)
 

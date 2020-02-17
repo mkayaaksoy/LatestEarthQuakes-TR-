@@ -6,7 +6,10 @@ $("#getButton").addClass("initial");
 $("#getButton").removeClass("after-load");
 LoadData();
 
+
 function LoadData() {
+    var sp = new Spinner();
+    sp.spin(document.getElementById("mainTable"));
     $("#getButton").hide();
     $("#eqTableBody tr").remove();
     $.get("https://api.orhanaydogdu.com.tr/deprem/live.php?limit=5", function (data, status) {
@@ -23,6 +26,7 @@ function LoadData() {
         $("#getButton").removeClass("initial");
         $("#getButton").addClass("after-load");
         $("#getButton").show();
+        sp.stop();
     });
 }
 
